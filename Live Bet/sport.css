@@ -1,0 +1,103 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font: normal 16px sans-serif;
+	color: #fff;
+}
+
+body {
+	background-color: #000;
+	background-image: url(http://wallpapers-image.ru/1920x1080/sport/wallpapers/sport-wallpapers-1920x1080-00013.jpg);
+}
+
+ul,
+nav {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	opacity: 0.75;
+	color: #EA2027;
+}
+
+a:hover {
+	opacity: 1;
+}
+
+ul {
+	list-style: none;
+}
+
+header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 35px 100px 0;
+	animation: 1s fadein 0.5s forwards;
+	opacity: 0;
+	color: #fff;
+}
+
+@keyframes fadein {
+	100% {
+		opacity: 1;
+	}
+}
+
+header h3 {
+	font-family: "Quicksand", sans-serif;
+	color: #f1c40f;
+
+}
+
+header nav {
+	display: flex;
+	margin-right: -15px;
+}
+
+header nav li {
+	margin: 0 15px;
+}
+
+.form-inline { 
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+
+.form-inline button {
+  background-color: dodgerblue;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  height: 25px;
+  width: 70px;
+  margin-right: 7px;
+  opacity: 0.6;
+}
+
+.form-inline button:hover {
+  background-color: #001133;
+}
+
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+button a {
+	color: #fff;
+}
